@@ -1,0 +1,74 @@
+?>
+
+<DOCTIPE! html>
+<html>
+<body>
+
+<?php
+$prod1=100;
+$prod2=200;
+$prod3=300;
+$prod4=400;
+$prod5=500;
+$prod6=600;
+$prod7=700;
+
+$subtotal=$prod1 + $prod2 + $prod3 + $prod4 + $prod5 + $prod6 + $prod7;
+$iva= $subtotal * .16;
+$total=$subtotal + $iva;
+?>
+
+
+
+
+<table>
+<tr>
+<td>product1</td>
+<td><?php echo $prod1;?></td></tr>
+
+<tr>
+<td>product2</td>
+<td><?php echo $prod2;?></td>
+</tr>
+
+<tr>
+<td>product3</td>
+<td><?php echo $prod3;?></td>
+</tr>
+
+<tr>
+<td>product4</td>
+<td><?php echo $prod4;?></td></tr>
+
+<tr>
+<td>product5</td>
+<td><?php echo $prod5;?></td>
+</tr>
+
+<tr>
+<td>product6</td>
+<td><?php echo $prod6;?></td>
+</tr>
+
+<tr>
+<td>product7</td>
+<td><?php echo $prod7;?></td>
+</tr>
+
+<tr>
+<td>Subtotal</td>
+<td><?php echo $subtotal;?></td>
+
+
+<tr>
+<td>IVA</td>
+<td><?php echo $iva;?></td></tr>
+
+<tr>
+<td>Total</td>
+<td><?php echo $total;?></td></tr>
+
+</table>
+</body>
+</html>
+<?php
